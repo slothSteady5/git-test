@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+  <title>Doge's Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+  
+  <link href="/normalize.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">></script>
+
+  <style>
+    .rubik-glitch-pop-regular {
+      font-family: "Rubik Glitch Pop", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .indie-flower-regular {
+      font-family: "Indie Flower", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    header {
+      text-align: center;
+      background: url('https://th.bing.com/th/id/OIG3.Y0ssLmbMg2z41Qr4Om4R?w=1024&h=1024&rs=1&pid=ImgDetMain');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      background: rgba(0,0,0,0.5);
+    }
+    .profile {
+      width: 40vw;
+      height: auto;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: "Indie Flower", cursive;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+
+    }
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    button:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="profile" src="https://th.bing.com/th/id/OIG2.SDmmYL.7HSSaLWyEwYkf?w=1024&h=1024&rs=1&pid=ImgDetMain">
+    <h1 class="rubik-glitch-pop-regular">Doge's Blog</h1>
+    <ul class="indie-flower-regular">
+      <li><a href="#">About Doge</a></li>
+      <li><a href="#">Bork of The Day</a></li>
+      <li><a href="#">Worst Barks</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Self introdogtion of Doge</h2>
+    <p>Doggo is good boi, good boi get chimken. Mlem.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>The Symphony of the Bork Bork</h2>
+    <p>Bork bork bork bork bork bork bork,
+       bork bork bork bork bork bork bork,
+       bork bork bork bork bork bork bork,
+      bork bork bork bork bork bork bork</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Code of Condog</h2>
+    <p>Henlo, doggo makes fren with hooman. Hooman give me chimkin is good hooman. Good boi get chimken.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
